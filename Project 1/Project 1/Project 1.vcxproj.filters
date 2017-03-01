@@ -18,16 +18,16 @@
     <ClCompile Include="Skill.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Game.cpp">
+    <ClCompile Include="Main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Action.cpp">
+    <ClCompile Include="Stats.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="charClass.cpp">
+    <ClCompile Include="Character.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Monster.cpp">
+    <ClCompile Include="Class.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -35,13 +35,13 @@
     <ClInclude Include="Skill.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Action.h">
+    <ClInclude Include="Stats.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="charClass.h">
+    <ClInclude Include="Character.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Monster.h">
+    <ClInclude Include="Class.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
