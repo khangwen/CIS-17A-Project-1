@@ -15,5 +15,6 @@ public:
 	~Class();
 
 	std::string GetClassInfo();
+	bool addSkill(Skill newSkill, int skillNum);
 };
 

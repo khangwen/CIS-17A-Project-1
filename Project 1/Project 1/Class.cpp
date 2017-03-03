@@ -28,3 +28,13 @@ string Class::GetClassInfo()
 
 	return info;
 }
+
+bool Class::addSkill(Skill newSkill, int skillNum)
+{
+	if (skillNum <= 9) {
+		_skill[skillNum] = newSkill;
+		return true;
+	}
+
+	return false;
+}

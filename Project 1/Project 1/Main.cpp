@@ -11,11 +11,14 @@ int main() {
 
 	string username;
 	string uClass;
+	Character character;
 	Stats charStat;
 	Class charClass;
 
+	Skill defaultSkill = Skill("Smash");
+
 	Stats warStat = Stats(10, 30, 20, 200, 50);
-	Class warClass = Class("Warrior", warStat);
+	Class warClass = Class("Warrior", warStat); 
 	Stats magStat = Stats(40, 10, 10, 100, 200);
 	Class magClass = Class("Magician", magStat);
 	Stats arcStat = Stats(15, 20, 30, 150, 100);
@@ -23,7 +26,12 @@ int main() {
 	Stats clerStat = Stats(30, 10, 10, 100, 150);
 	Class clerClass = Class("Cleric", clerStat);
 
-	cout << "Welcome to ICANTCOMEUPWITHANAME online!" << endl; //Add dif name later
+	warClass.addSkill(defaultSkill, 0);
+	magClass.addSkill(defaultSkill, 0);
+	arcClass.addSkill(defaultSkill, 0);
+	clerClass.addSkill(defaultSkill, 0);
+
+	cout << "Welcome to Red Garden online!" << endl;
 	cout << "Enter a username: ";
 	getline(cin, username);
 
@@ -35,6 +43,7 @@ int main() {
 	for (int i = 0; i < uClass.size(); i++){
 		uClass[i] = tolower(uClass[i]);
 	}
+
 
 	if (uClass == "warrior"){
 		charStat = warStat;
@@ -53,8 +62,10 @@ int main() {
 		charClass = clerClass;
 	}
 
-	Character charInfo = Character(username, 250, charStat, charClass);
-	cout << charInfo.GetCharInfo();
+	character.setCharInfo(username, 250, charStat, charClass);
+	character.addSkill(defaultSkill, 3);
+
+	cout << character.GetCharInfo();
 	cout << endl;
 
 	return 0;

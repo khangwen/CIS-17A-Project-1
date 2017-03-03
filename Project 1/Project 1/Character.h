@@ -4,7 +4,6 @@
 #include "Class.h"
 #include "Skill.h"
 
-//add class and skill
 class Character
 {
 private:
@@ -12,10 +11,13 @@ private:
 	int _money;
 	Stats _stats; 
 	Class _class;
+	Skill _skill[10];
 public:
-	Character(std::string name, int money, Stats stats, Class dClass);
+	Character(); 
 	~Character();
 
 	std::string GetCharInfo();
+	void setCharInfo(std::string name, int money, Stats stats, Class dClass);
+	bool addSkill(Skill newSkill, int skillNum);
 };
 

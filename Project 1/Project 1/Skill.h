@@ -9,5 +9,7 @@ public:
 	Skill();
 	Skill(std::string name);
 	~Skill();
+
+	std::string GetSkill();
 };
 

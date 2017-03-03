@@ -1,11 +1,14 @@
 #include "Skill.h"
+#include <string>
+#include <iostream>
 
-Skill::Skill() 
+using namespace std;
+
+Skill::Skill()
 {
-	_name = "Null";
 }
 
-Skill::Skill(std::string name)
+Skill::Skill(string name)
 {
 	_name = name;
 }
@@ -13,4 +16,9 @@ Skill::Skill(std::string name)
 
 Skill::~Skill()
 {
+}
+
+string Skill::GetSkill()
+{	
+	return _name;
 }
